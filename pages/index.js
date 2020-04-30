@@ -73,8 +73,8 @@ const Picture = styled.img`
 const Product = styled.div`
   width: 100%;
   padding: 60px 0;
-  background-color: #a4b1ba;
-  color: #fff;
+  background-color: #e9f0f5;
+  color: #000;
 `
 
 const ProductTitle = styled.div`
