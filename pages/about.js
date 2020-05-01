@@ -2,11 +2,14 @@ import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
 import Link from 'next/link'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Clarkson',Helvetica,sans-serif;
+    color: rgb(39,49,56);
   }
 `
 
@@ -52,7 +55,7 @@ export default function Index() {
   return (
     <>
       <GlobalStyle />
-      <Navbar dist={'120px'} />
+      <Navbar dist={'160px'} />
 
       <Container>
         <ProfileBoxWrapper>
@@ -116,6 +119,7 @@ export default function Index() {
           </ProfileBox>
         </ProfileBoxWrapper>
       </Container>
+      <Footer />
     </>
   )
 }

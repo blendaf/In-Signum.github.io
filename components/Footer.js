@@ -3,9 +3,12 @@ import styled from 'styled-components'
 const FooterWrapper = styled.div`
   display: block;
   width: 100%;
-  background-color: white;
-  color: black;
+  background-color: rgb(39, 49, 56);
+  color: white;
   font-size: 10px;
+  height: 100%;
+  padding-top: 30px;
+  padding-bottom: 20px;
 `
 
 const Container = styled.div`
@@ -22,7 +25,6 @@ const Footer = styled.div`
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
-  margin: 50px 0px;
 `
 
 const FooterContent = styled.div`

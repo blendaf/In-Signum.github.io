@@ -17,15 +17,15 @@ const Navbar = styled.div`
   }
 
   .two:hover ~ hr {
-    margin-left: 120px;
+    margin-left: 160px;
   }
 
   .three:hover ~ hr {
-    margin-left: 240px;
+    margin-left: 320px;
   }
 
   .four:hover ~ hr {
-    margin-left: 360px;
+    margin-left: 480px;
   }
 `
 
@@ -36,6 +36,7 @@ const NavItemWrapper = styled.ul`
 const NavItem = styled.li`
   display: inline;
   text-align: center;
+  cursor: pointer;
 `
 const DropDown = styled.div`
   display: inline;
@@ -74,7 +75,7 @@ const DropDownContent = styled.div`
 
 const NavLink = styled.a`
   display: inline-block;
-  width: 120px;
+  width: 160px;
   text-align: center;
   padding: 0.75rem 0;
   margin: 0;
@@ -85,9 +86,9 @@ const NavLink = styled.a`
 
 const Ruler = styled.hr`
   height: 0.25rem;
-  width: 120px;
+  width: 160px;
   margin: 0;
-  background: #ff3d4a;
+  background: rgb(39, 49, 56);
   border: none;
   transition: 0.3s ease-in-out;
   position: relative;
@@ -113,16 +114,27 @@ export default ({ dist }) => {
           <DropDown className="three">
             <NavLink href="#">The Market</NavLink>
             <DropDownContent>
-              <a href="#">Competitors</a>
-              <a href="#">Users</a>
+              <Link href="/competitors">
+                <a href="#">Competitors</a>
+              </Link>
+
+              <Link href="/users">
+                <a href="#">Users</a>
+              </Link>
             </DropDownContent>
           </DropDown>
           <DropDown className="four">
             <NavLink href="#">Our Business</NavLink>
             <DropDownContent>
-              <a href="#">Business Model Canvas</a>
-              <a href="#">Marketing Plan</a>
-              <a href="#">Business Cost Structure</a>
+              <Link href="/our-business">
+                <a href="#">Our Business Model Canvas</a>
+              </Link>
+              <Link href="/our-business">
+                <a href="#">Marketing Plan</a>
+              </Link>
+              <Link href="/our-business">
+                <a href="#">Business Cost Structure</a>
+              </Link>
             </DropDownContent>
           </DropDown>
           <Ruler dist={dist} />

@@ -2,91 +2,88 @@ import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-
 import { BatteryCharging } from '@styled-icons/boxicons-solid/BatteryCharging'
 
 const GlobalStyle = createGlobalStyle`
   body {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Clarkson',Helvetica,sans-serif;
+    color: rgb(39,49,56);
   }
 `
 
 const Header = styled.div`
   width: 100%;
   height: 80vh;
-
-  background-image: url(${'/logo-small.png'});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(214, 220, 224);
 `
 const Main = styled.div`
   width: 100%;
-  height: 800px;
 `
+
+const Section = styled.div`
+  width: 100%;
+`
+
+const Title = styled.div`
+  font-size: 40px;
+  text-align: center;
+  padding-top: ${(props) => (props.bottom ? '80px' : '40px')};
+  padding-bottom: ${(props) => (props.bottom ? '40px' : '0px')};
+`
+
 const Container = styled.div`
-  width: 80%;
+  width: 70%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
 `
 
 const InterviewBox = styled.div`
-  display: flex;
-  padding: 40px 0px;
-`
+  margin: 20px 0px;
 
-const InterviewText = styled.div`
-  width: 50%;
-  display: flex;
   padding: 40px 0px;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: ${(props) => (props.left ? 'flex-start' : 'flex-end')};
-  padding-left: ${(props) => (props.left ? '0px' : '60px')};
-  padding-right: ${(props) => (props.left ? '60px' : '0px')};
-  text-align: ${(props) => (props.left ? 'left' : 'right')};
+  width: 100%;
+  border-radius: 5px;
+  background-image: url(${'/quote2.png'});
+  background-position: ${(props) => (props.left ? '90% 10%' : '10% 10%')};
+  background-repeat: no-repeat;
+  background-size: 100px 100px;
 `
 
 const InterviewTextMain = styled.div`
-  width: 80%;
+  width: 75%;
+  font-size: 20px;
+  text-align: ${(props) => (props.left ? 'left' : 'right')};
+  line-height: 1.5em;
 `
 
 const InterviewTextName = styled.div`
   padding-top: 20px;
   font-weight: 600;
+  text-align: right;
+  text-align: ${(props) => (props.left ? 'left' : 'right')};
 `
 
-const InterviewPicture = styled.div`
-  width: 50%;
-  display: flex;
-  justify-content: ${(props) => (props.left ? 'flex-end' : 'flex-start')};
-  height: 300px;
-  padding: 0px;
-  padding-left: ${(props) => (props.left ? '0px' : '60px')};
-  padding-right: ${(props) => (props.left ? '60px' : '0px')};
-`
-
-const Picture = styled.img`
-  width: 250px;
+const Break = styled.div`
+  border: 0.5px solid black;
+  width: 80%;
+  margin: 0 auto;
 `
 
 const Product = styled.div`
   width: 100%;
   padding: 60px 0;
-  background-color: #e9f0f5;
+
   color: #000;
-`
-
-const ProductTitle = styled.div`
-  font-size: 40px;
-  text-align: center;
-  padding-top: 40px;
-`
-
-const ProductSubTitle = styled.div`
-  font-size: 30px;
-  text-align: center;
-  padding: 10px 0;
 `
 
 const ProductPicture = styled.div`
@@ -94,10 +91,10 @@ const ProductPicture = styled.div`
 `
 
 const ProductImage = styled.div`
-  background-color: white;
   width: 400px;
   height: 400px;
   margin: 0 auto;
+  background-color: rgb(39, 49, 56);
 `
 
 const ProductDescription = styled.div`
@@ -117,6 +114,7 @@ const DescriptionIcon = styled.div``
 
 const StyledBattery = styled(BatteryCharging)`
   width: 50px;
+  color: rgb(39, 49, 56);
 `
 
 export default function Index() {
@@ -128,56 +126,8 @@ export default function Index() {
         <Navbar dist={'0px'} />
       </Header>
       <Main>
-        <Container>
-          <InterviewBox>
-            <InterviewText>
-              <InterviewTextMain>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English.
-              </InterviewTextMain>
-              <InterviewTextName>Blenda Fröjdh, Stockholm</InterviewTextName>
-            </InterviewText>
-            <InterviewPicture>
-              <Picture src="/placeholder.jpg" />
-            </InterviewPicture>
-          </InterviewBox>
-          <InterviewBox>
-            <InterviewPicture left>
-              <Picture src="/placeholder.jpg" />
-            </InterviewPicture>
-            <InterviewText left>
-              <InterviewTextMain left>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English.
-              </InterviewTextMain>
-              <InterviewTextName>Blenda Fröjdh, Stockholm</InterviewTextName>
-            </InterviewText>
-          </InterviewBox>
-          <InterviewBox>
-            <InterviewText>
-              <InterviewTextMain>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English.
-              </InterviewTextMain>
-              <InterviewTextName>Blenda Fröjdh, Stockholm</InterviewTextName>
-            </InterviewText>
-            <InterviewPicture>
-              <Picture src="/placeholder.jpg" />
-            </InterviewPicture>
-          </InterviewBox>
-        </Container>
         <Product>
-          <ProductTitle>Our Product</ProductTitle>
-          <ProductSubTitle>InSignum</ProductSubTitle>
+          <Title>Our Product</Title>
           <ProductPicture>
             <ProductImage></ProductImage>
           </ProductPicture>
@@ -195,6 +145,47 @@ export default function Index() {
             </Description>
           </ProductDescription>
         </Product>
+
+        <Section>
+          <Container>
+            <Title bottom>Why our product exists</Title>
+            <InterviewBox>
+              <InterviewTextMain>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </InterviewTextMain>
+              <InterviewTextName>Blenda Fröjdh, Stockholm</InterviewTextName>
+            </InterviewBox>
+
+            <InterviewBox left>
+              <InterviewTextMain left>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </InterviewTextMain>
+              <InterviewTextName left>
+                Blenda Fröjdh, Stockholm
+              </InterviewTextName>
+            </InterviewBox>
+
+            <InterviewBox>
+              <InterviewTextMain>
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less
+                normal distribution of letters, as opposed to using 'Content
+                here, content here', making it look like readable English.
+              </InterviewTextMain>
+              <InterviewTextName>Blenda Fröjdh, Stockholm</InterviewTextName>
+            </InterviewBox>
+          </Container>
+        </Section>
+
         <Footer />
       </Main>
     </>
