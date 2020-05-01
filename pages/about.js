@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import { createGlobalStyle } from 'styled-components'
-import Link from 'next/link'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
@@ -12,43 +11,41 @@ const GlobalStyle = createGlobalStyle`
     color: rgb(39,49,56);
   }
 `
-
-const Main = styled.div`
-  width: 100%;
-  height: 800px;
-`
 const Container = styled.div`
-  width: 60%;
+  width: 80%;
   margin: 0 auto;
-  padding-top: 100px;
+  padding: 40px 0;
 `
-
 const ProfileBoxWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 0px;
 `
-
 const ProfileBox = styled.div`
   display: flex;
   flex-direction: column;
-`
-
-const ProfilePicture = styled.div`
-  display: flex;
+  text-align: center;
+  align-items: flex-start;
   align-items: center;
-  justify-content: center;
 `
-
+const ProfileName = styled.div`
+  font-size: 25px;
+  font-weight: 800;
+  padding: 10px 0;
+`
 const ProfileText = styled.div`
-  padding: 20px 40px;
-  padding-bottom: 40px;
+  font-size: 15px;
+  letter-spacing: 1px;
+  width: 250px;
 `
-
+const ProfilePicture = styled.div`
+  width: 250px;
+`
 const Picture = styled.img`
-  width: 200px;
-  border-radius: 20px;
+  width: 100%;
+  border-radius: 250px;
 `
 
 export default function Index() {
@@ -56,35 +53,48 @@ export default function Index() {
     <>
       <GlobalStyle />
       <Navbar dist={'160px'} />
-
       <Container>
         <ProfileBoxWrapper>
           <ProfileBox>
             <ProfilePicture>
-              <Picture src="/placeholder.jpg" />
+              <Picture src="/blenda.jpg" />
             </ProfilePicture>
+            <ProfileName>Blenda Fröjdh</ProfileName>
+            <ProfileText>Sweden, Stockholm</ProfileText>
+            <ProfileText>BCs in Information Technology</ProfileText>
             <ProfileText>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              MCs in ICT Innovation and Human-Computer Interaction
+            </ProfileText>
+            <ProfileText>
+              Favorite weird food combination: Tortillas with Swedish caviar -
+              don’t knock it until you try it.
             </ProfileText>
           </ProfileBox>
           <ProfileBox>
             <ProfilePicture>
               <Picture src="/placeholder.jpg" />
             </ProfilePicture>
+            <ProfileName>David Jacobsson</ProfileName>
+            <ProfileText>Sweden, Stockholm</ProfileText>
+            <ProfileText>BCs in Information Technology</ProfileText>
+            <ProfileText>MCs in Autonomous Systems</ProfileText>
             <ProfileText>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Greatest Irony: Loves cats and cheese, Is allergic to both.
+            </ProfileText>
+          </ProfileBox>
+          <ProfileBox>
+            <ProfilePicture>
+              <Picture src="/blenda.jpg" />
+            </ProfilePicture>
+            <ProfileName>Shujian Guan</ProfileName>
+            <ProfileText>China, Shanghai</ProfileText>
+            <ProfileText>BCs in Computer Science</ProfileText>
+            <ProfileText>
+              MCs in Human-Computer Interaction and Design (EIT Digital)
+            </ProfileText>
+            <ProfileText>
+              Favorite weird food combination: Tortillas with Swedish caviar -
+              don’t knock it until you try it.
             </ProfileText>
           </ProfileBox>
         </ProfileBoxWrapper>
@@ -93,28 +103,38 @@ export default function Index() {
             <ProfilePicture>
               <Picture src="/placeholder.jpg" />
             </ProfilePicture>
+            <ProfileName>Joana Lameiras</ProfileName>
+            <ProfileText>Portugal, Coimbra</ProfileText>
+            <ProfileText>BCs in Informatics Engineering</ProfileText>
+            <ProfileText>MCs in Visual Computing and Communication</ProfileText>
             <ProfileText>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Guilty pleasure: I love all kinds of chick flicks, especially the
+              extra cheesy, cliché ones.
+            </ProfileText>
+          </ProfileBox>
+          <ProfileBox>
+            <ProfilePicture>
+              <Picture src="/blenda.jpg" />
+            </ProfilePicture>
+            <ProfileName>Haichuan Wang</ProfileName>
+            <ProfileText>Shenzhen, China</ProfileText>
+            <ProfileText>BCs in Electrical engineering</ProfileText>
+            <ProfileText>MCs in Autonomous system</ProfileText>
+            <ProfileText>
+              Favorite weird food combination: Tortillas with Swedish caviar -
+              don’t knock it until you try it.
             </ProfileText>
           </ProfileBox>
           <ProfileBox>
             <ProfilePicture>
               <Picture src="/placeholder.jpg" />
             </ProfilePicture>
+            <ProfileName>Adrian Neila Serrano</ProfileName>
+            <ProfileText>Sweden, Stockholm</ProfileText>
+            <ProfileText>BCs in Information Technology</ProfileText>
+            <ProfileText>MCs in Autonomous Systems</ProfileText>
             <ProfileText>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Greatest Irony: Loves cats and cheese, Is allergic to both.
             </ProfileText>
           </ProfileBox>
         </ProfileBoxWrapper>

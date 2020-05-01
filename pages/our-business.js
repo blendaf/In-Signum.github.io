@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
     color: rgb(39,49,56);
   }
 `
-
 const Main = styled.div`
   width: 100%;
   height: 800px;
@@ -21,7 +20,6 @@ const Container = styled.div`
   margin: 0 auto;
   padding-top: 100px;
 `
-
 export default function Index() {
   return (
     <>

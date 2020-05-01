@@ -21,20 +21,21 @@ const Container = styled.div`
   margin: 0 auto;
 `
 
-const Title = styled.div`
+const Title = styled.h1`
   font-size: 40px;
   text-align: center;
+  font-weight: 500;
   padding-top: ${(props) => (props.product ? '40px' : '80px')};
   padding-bottom: ${(props) => (props.product ? '0px' : '40px')};
 `
-const Subtitle = styled.div`
+const Subtitle = styled.h2`
   font-size: 30px;
-  text-align: center;
-  padding: 10px 0;
+  font-weight: 500;
 `
 
-const Text = styled.div`
-  padding: 20px 0;
+const Text = styled.p`
+  margin: 2em 0;
+  line-height: 1.2;
 `
 
 const DiagramsWrapper = styled.div`
@@ -45,6 +46,7 @@ const DiagramsWrapper = styled.div`
 `
 const Diagrams = styled.img`
   padding: 20px 0;
+  width: 100%;
 `
 
 export default function Index() {
