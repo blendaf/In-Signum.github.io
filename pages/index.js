@@ -1,17 +1,8 @@
 import styled from 'styled-components'
-import { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { BatteryCharging } from '@styled-icons/boxicons-solid/BatteryCharging'
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Clarkson',Helvetica,sans-serif;
-    color: rgb(39,49,56);
-  }
-`
+import { DoubleQuoteSerifRight } from 'styled-icons/open-iconic'
 
 const Header = styled.div`
   width: 100%;
@@ -44,23 +35,24 @@ const Container = styled.div`
 `
 
 const InterviewBox = styled.div`
-  margin: 20px 0px;
-
   padding: 40px 0px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: ${(props) => (props.left ? 'flex-start' : 'flex-end')};
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   border-radius: 5px;
-  background-image: url(${'/quote2.png'});
-  background-position: ${(props) => (props.left ? '90% 10%' : '10% 10%')};
-  background-repeat: no-repeat;
-  background-size: 100px 100px;
 `
 
+const StyledQuote = styled(DoubleQuoteSerifRight)`
+  width: 250px;
+  padding: 0 30px;
+  color: #fd9e2e;
+`
+
+const InterviewText = styled.div``
+
 const InterviewTextMain = styled.div`
-  width: 75%;
   font-size: 20px;
   text-align: ${(props) => (props.left ? 'left' : 'right')};
   line-height: 1.5em;
@@ -71,12 +63,6 @@ const InterviewTextName = styled.div`
   font-weight: 600;
   text-align: right;
   text-align: ${(props) => (props.left ? 'left' : 'right')};
-`
-
-const Break = styled.div`
-  border: 0.5px solid black;
-  width: 80%;
-  margin: 0 auto;
 `
 
 const Product = styled.div`
@@ -120,8 +106,6 @@ const StyledBattery = styled(BatteryCharging)`
 export default function Index() {
   return (
     <>
-      <GlobalStyle />
-
       <Header>
         <Navbar dist={'0px'} />
       </Header>
@@ -150,38 +134,47 @@ export default function Index() {
           <Container>
             <Title bottom>Why our product exists</Title>
             <InterviewBox>
-              <InterviewTextMain>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English.
-              </InterviewTextMain>
-              <InterviewTextName>Blenda Fröjdh, Stockholm</InterviewTextName>
+              <StyledQuote />
+              <InterviewText>
+                <InterviewTextMain>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                </InterviewTextMain>
+                <InterviewTextName>Blenda Fröjdh, Stockholm</InterviewTextName>
+              </InterviewText>
             </InterviewBox>
 
             <InterviewBox left>
-              <InterviewTextMain left>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English.
-              </InterviewTextMain>
-              <InterviewTextName left>
-                Blenda Fröjdh, Stockholm
-              </InterviewTextName>
+              <InterviewText>
+                <InterviewTextMain left>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                </InterviewTextMain>
+                <InterviewTextName left>
+                  Blenda Fröjdh, Stockholm
+                </InterviewTextName>
+              </InterviewText>
+              <StyledQuote />
             </InterviewBox>
 
             <InterviewBox>
-              <InterviewTextMain>
-                It is a long established fact that a reader will be distracted
-                by the readable content of a page when looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less
-                normal distribution of letters, as opposed to using 'Content
-                here, content here', making it look like readable English.
-              </InterviewTextMain>
-              <InterviewTextName>Blenda Fröjdh, Stockholm</InterviewTextName>
+              <StyledQuote />
+              <InterviewText>
+                <InterviewTextMain>
+                  It is a long established fact that a reader will be distracted
+                  by the readable content of a page when looking at its layout.
+                  The point of using Lorem Ipsum is that it has a more-or-less
+                  normal distribution of letters, as opposed to using 'Content
+                  here, content here', making it look like readable English.
+                </InterviewTextMain>
+                <InterviewTextName>Blenda Fröjdh, Stockholm</InterviewTextName>
+              </InterviewText>
             </InterviewBox>
           </Container>
         </Section>

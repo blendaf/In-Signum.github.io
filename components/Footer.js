@@ -42,6 +42,15 @@ const FooterText = styled.p`
   line-height: 1.25;
   font-size: 15px;
   font-weight: lighter;
+
+  a {
+    color: #fd9e2e;
+    transition: all 0.2s ease;
+
+    :hover {
+      color: #ffff;
+    }
+  }
 `
 
 export default () => {
@@ -64,7 +73,7 @@ export default () => {
 
           <FooterContent>
             <FooterText>
-              Icons used on the page are made by
+              Icons used on the page are made by{' '}
               <a href="https://github.com/atisawd">Atisa</a> from
               www.boxicons.com and are licensed by CC BY 4.0
             </FooterText>
