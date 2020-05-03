@@ -111,7 +111,7 @@ export default function Index() {
         <ProfileBoxWrapper>
           <ProfileBox>
             <ProfilePicture>
-              <Picture src="/placeholder.jpg" />
+              <Picture src="/joana.jpg" />
             </ProfilePicture>
             <ProfileName>Joana Lameiras</ProfileName>
             <ProfileText>Portugal, Coimbra</ProfileText>
