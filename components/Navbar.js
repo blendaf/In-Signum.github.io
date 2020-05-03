@@ -126,10 +126,10 @@ export default ({ dist }) => {
           <DropDown className="four">
             <NavLink href="#">Our Business</NavLink>
             <DropDownContent>
-              <Link href="/our-business">
+              <Link href="/canvas">
                 <a href="#">Our Business Model Canvas</a>
               </Link>
-              <Link href="/our-business">
+              <Link href="/marketing-plan">
                 <a href="#">Marketing Plan</a>
               </Link>
               <Link href="/our-business">

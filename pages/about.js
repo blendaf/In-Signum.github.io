@@ -14,7 +14,16 @@ const GlobalStyle = createGlobalStyle`
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0;
+`
+
+const Title = styled.h1`
+  font-size: 40px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 20px;
+  margin: 0;
+  padding-bottom: ${(props) => (props.product ? '0px' : '40px')};
 `
 const ProfileBoxWrapper = styled.div`
   display: flex;
@@ -54,6 +63,7 @@ export default function Index() {
       <GlobalStyle />
       <Navbar dist={'160px'} />
       <Container>
+        <Title>The Team</Title>
         <ProfileBoxWrapper>
           <ProfileBox>
             <ProfilePicture>
@@ -72,7 +82,7 @@ export default function Index() {
           </ProfileBox>
           <ProfileBox>
             <ProfilePicture>
-              <Picture src="/placeholder.jpg" />
+              <Picture src="/DavidJ.png" />
             </ProfilePicture>
             <ProfileName>David Jacobsson</ProfileName>
             <ProfileText>Sweden, Stockholm</ProfileText>
