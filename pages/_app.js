@@ -15,6 +15,7 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     font-family: 'Clarkson',Helvetica,sans-serif;
     color: rgb(39,49,56);
+   
       
     
   }

@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import { BatteryCharging } from '@styled-icons/boxicons-solid/BatteryCharging'
 import { DoubleQuoteSerifRight } from 'styled-icons/open-iconic'
+import { FormatQuote } from '@styled-icons/material-sharp/FormatQuote'
 
 const Header = styled.div`
   width: 100%;
@@ -44,16 +45,19 @@ const InterviewBox = styled.div`
   border-radius: 5px;
 `
 
-const StyledQuote = styled(DoubleQuoteSerifRight)`
-  width: 250px;
-  padding: 0 30px;
+const StyledQuote = styled(FormatQuote)`
+  height: 100px;
+  box-sizing: border-box;
   color: #fd9e2e;
 `
 
-const InterviewText = styled.div``
+const InterviewText = styled.div`
+  width: 80%;
+  padding-top: 20px;
+`
 
 const InterviewTextMain = styled.div`
-  font-size: 20px;
+  font-size: 25px;
   text-align: ${(props) => (props.left ? 'left' : 'right')};
   line-height: 1.5em;
 `
@@ -68,7 +72,6 @@ const InterviewTextName = styled.div`
 const Product = styled.div`
   width: 100%;
   padding: 60px 0;
-
   color: #000;
 `
 
@@ -135,30 +138,26 @@ export default function Index() {
             <Title bottom>Why our product exists</Title>
             <InterviewBox>
               <StyledQuote />
+
               <InterviewText>
                 <InterviewTextMain>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
+                  An emergency alarm went of at my workplace, a chemical
+                  research lab. I couldn't hear the alarm. luckily I was warned
+                  by a collugue, but what if I would have been in the bathroom?
+                  What if there hadn't been anyone there to warn me?
                 </InterviewTextMain>
-                <InterviewTextName>Blenda Fröjdh, Stockholm</InterviewTextName>
+                <InterviewTextName>Carolina, Porto</InterviewTextName>
               </InterviewText>
             </InterviewBox>
 
             <InterviewBox left>
               <InterviewText>
                 <InterviewTextMain left>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
+                  I was almost run over by an ambulance. It was coming from
+                  behind a truck and people didn't warn me because they expected
+                  me to hear it and stop.
                 </InterviewTextMain>
-                <InterviewTextName left>
-                  Blenda Fröjdh, Stockholm
-                </InterviewTextName>
+                <InterviewTextName left>Alex, Madrid</InterviewTextName>
               </InterviewText>
               <StyledQuote />
             </InterviewBox>
@@ -167,13 +166,13 @@ export default function Index() {
               <StyledQuote />
               <InterviewText>
                 <InterviewTextMain>
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
+                  People tend to get angry because they think you are ignoring
+                  them, not knowing you are deaf. Once a floor cleaning machine
+                  driver was yelling and complaining because I didn't move out
+                  off the way, but of course it was just that I couldn't hear
+                  him.
                 </InterviewTextMain>
-                <InterviewTextName>Blenda Fröjdh, Stockholm</InterviewTextName>
+                <InterviewTextName>André, Stockholm</InterviewTextName>
               </InterviewText>
             </InterviewBox>
           </Container>
