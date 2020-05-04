@@ -103,8 +103,7 @@ export default function Index() {
               MCs in Human-Computer Interaction and Design (EIT Digital)
             </ProfileText>
             <ProfileText>
-              Favorite weird food combination: Tortillas with Swedish caviar -
-              don’t knock it until you try it.
+              Call of duty: Always ready for liberating blueberry ice cream
             </ProfileText>
           </ProfileBox>
         </ProfileBoxWrapper>
@@ -131,8 +130,8 @@ export default function Index() {
             <ProfileText>BCs in Electrical engineering</ProfileText>
             <ProfileText>MCs in Autonomous system</ProfileText>
             <ProfileText>
-              Favorite weird food combination: Tortillas with Swedish caviar -
-              don’t knock it until you try it.
+              What I love about InSignum: I love to work with a multinational
+              team where everyone can come up with different cool ideas.
             </ProfileText>
           </ProfileBox>
           <ProfileBox>
@@ -144,7 +143,8 @@ export default function Index() {
             <ProfileText>BCs in Information Technology</ProfileText>
             <ProfileText>MCs in Autonomous Systems</ProfileText>
             <ProfileText>
-              Greatest Irony: Loves cats and cheese, Is allergic to both.
+              Admission of facts: Has more imagination than time to express all
+              of it. Adores food and eating.
             </ProfileText>
           </ProfileBox>
         </ProfileBoxWrapper>

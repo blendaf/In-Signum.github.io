@@ -121,6 +121,9 @@ export default ({ dist }) => {
               <Link href="/users">
                 <a href="#">Users</a>
               </Link>
+              <Link href="/hearing-loss">
+                <a href="#">The Levels of Hearing Loss</a>
+              </Link>
             </DropDownContent>
           </DropDown>
           <DropDown className="four">
@@ -134,6 +137,9 @@ export default ({ dist }) => {
               </Link>
               <Link href="/our-business">
                 <a href="#">Business Cost Structure</a>
+              </Link>
+              <Link href="/our-business">
+                <a href="#">How We Will Run The Venture</a>
               </Link>
             </DropDownContent>
           </DropDown>

@@ -54,7 +54,7 @@ export default function Index() {
       <Container>
         <Title>Our Business Model Canvas</Title>
         <FigureWrapper>
-          <Figure src="/Canvas.png" />
+          <Figure src="/canvas.png" />
         </FigureWrapper>
         <Subtitle>Key Partners</Subtitle>
         <Text>
