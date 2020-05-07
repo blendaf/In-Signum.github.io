@@ -1,23 +1,11 @@
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Title, Subtitle } from '../components/Fragments'
 
 const Container = styled.div`
   width: 60%;
   margin: 0 auto;
-`
-
-const Title = styled.h1`
-  font-size: 40px;
-  text-align: center;
-  font-weight: 500;
-  margin: 0;
-  padding-top: 20px;
-  padding-bottom: ${(props) => (props.product ? '0px' : '40px')};
-`
-const Subtitle = styled.h2`
-  font-size: 30px;
-  font-weight: 500;
 `
 
 const Text = styled.p`
@@ -25,21 +13,10 @@ const Text = styled.p`
   line-height: 1.2;
 `
 
-const DiagramsWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-`
-const Diagrams = styled.img`
-  padding: 20px 0;
-  width: 100%;
-`
-
-export default function Index() {
+export default () => {
   return (
     <>
-      <Navbar dist={'320px'} />
+      <Navbar dist={'480px'} />
       <Container>
         <Title>The Different Levels of Hearing Loss</Title>
         <Text>

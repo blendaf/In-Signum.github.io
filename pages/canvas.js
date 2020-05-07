@@ -1,30 +1,13 @@
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Title, Subtitle } from '../components/Fragments'
 
 const Container = styled.div`
   width: 60%;
   margin: 0 auto;
 `
 
-const Title = styled.h1`
-  font-size: 40px;
-  text-align: center;
-  font-weight: 500;
-  margin: 0;
-  padding-top: 20px;
-  padding-bottom: ${(props) => (props.product ? '0px' : '40px')};
-`
-const Subtitle = styled.h2`
-  font-size: 30px;
-  font-weight: 500;
-`
-
-const SubSubtitle = styled.h4`
-  font-size: 20px;
-  font-weight: 800;
-  margin: 0;
-`
 const Text = styled.p`
   margin: 2em 0;
   line-height: 1.2;
@@ -47,98 +30,131 @@ const FigureText = styled.h3`
   margin: 0;
 `
 
-export default function Index() {
+export default () => {
   return (
     <>
-      <Navbar dist={'480px'} />
+      <Navbar dist={'640px'} />
       <Container>
         <Title>Our Business Model Canvas</Title>
         <FigureWrapper>
           <Figure src="/canvas.png" />
         </FigureWrapper>
-        <Subtitle>Key Partners</Subtitle>
+        <Subtitle>Key Partners </Subtitle>
         <Text>
           There are so many groups, associations, and companies working
           tirelessly to improve the life quality of people that are hard of
           hearing. We believe that collaboration is the key to success and
-          progress, therefore, we will try to collaborate with some of the
-          groups and associations that are leading change for people with
-          hearing disabilities. For example, we hope to collaborate with the
-          Swedish national deaf association in the form of getting feedback and
-          improving our product. To be able to build our project we have to
-          establish partnerships not only with other associations and companies
-          working with or for people with hard of hearing, but also companies
-          providing necessary hardware for our product.
+          progress, therefore, we collaborate with some of the groups and
+          associations that are leading change for people with hearing
+          disabilities. For example, we are collaborating with the Swedish
+          national deaf association to be able to continuously improve our
+          product by getting feedback from their members. To be able to build
+          our project we have established partnerships not only with other
+          associations and companies working with or for people that are hard of
+          hearing, but also a manufacturing partner that produces our product
+          and retail stores that resell our product.
         </Text>
-        <Subtitle>Key Activities</Subtitle>
+
+        <Subtitle>Key activities</Subtitle>
         <Text>
-          Our key activities will foremost be the production of our product, the
-          continuous development of our product through {'R&D'} activities and
-          community management.
+          Our key activities are foremost the production of our product, the
+          continuous development of our product through R&D activities,
+          marketing, and community management. We have a close relationship with
+          our customers, this does not only help us to market our product, but
+          to get important feedback on our device and what they want us to
+          improve.
         </Text>
+
         <Subtitle>Key Resources</Subtitle>
         <Text>
-          The key resources we have are close relationships with the persons in
-          the deaf community meaning that we will be able to get continuous
-          feedback from our key users and customers. Furthermore, we also have
-          mentors and advisor that are knowledgable both within our
-          technological area, but also within the area of innovation and
-          business development.
+          The key resources we have are close relationships with people within
+          the deaf community meaning that we are able to get continuous feedback
+          from our key users and customers. Furthermore, we also have mentors
+          and advisor that are knowledgable both within our technological area,
+          but also within the area of innovation and business development. We
+          also have a diverse group of people working at the business with
+          backgrounds in interaction design, autonomous systems, and ICT
+          innovation.
         </Text>
-        <Subtitle>Value Proposition</Subtitle>
+
+        <Subtitle>Value proposition</Subtitle>
         <Text>
           Comparing our product’s key features to that of the competitions we
-          distinguish ourselves in a number of ways. The value we will be
-          bringing to our customers is newness, we will be meeting needs that no
-          other company or product can satisfy.
+          distinguish ourselves in a number of ways. Some of them being that our
+          product is a discrete, wearable device that not only notifies its user
+          of any sounds in the proximity but, through different feedback
+          patterns, notifies the user of a characteristic and direction of a
+          sound. The value we are providing to our customers is, therefore,
+          newness, we will be meeting needs that no other company or product
+          today, can satisfy.
         </Text>
+
         <Subtitle>Customer Relationships</Subtitle>
         <Text>
-          The relationship we want to establish with our customers is to create
-          a community relationship. This could be done by offering a forum for
-          people using our product or similar. Since our customer base is so
-          slim we believe that 1. it would be quite easy or easier to create a
-          sense of community 2. A good platform to be able to market our
-          product. When trying to get in contact with our users we realized that
-          the deaf community is quite small and tight-knit and that they use
-          community forums such as Facebook groups and such heavily. So creating
-          a community relationship with and between our customers we think would
-          be an effective way to attract people to the forum and as such our
-          product. Creating a forum could also be a way of offering customers to
-          help with their devices as they could ask each other and us about the
-          product.
+          The relationship we have with our customers is a community
+          relationship. This is done by offering a platform, through our social
+          media channels, for people using our product to meet and discuss.
+          Since our customer base is so slim we believe that having a community
+          platform is a great way to market our product. When trying to get in
+          contact with our users we realized that the deaf community is quite
+          small and tight-knit and that they use community forums such as
+          Facebook groups and such heavily. So creating a community relationship
+          with and between our customers we think would be an effective way to
+          attract people to the forum and as such our product. Creating a forum
+          could also be a way of offering our customers help with their devices
+          as they could ask each other and us about the product. Therefore one
+          of our main activities is community management.
         </Text>
+
         <Subtitle>Channels</Subtitle>
         <Text>
           To make sure our business will thrive and that as many people as
-          possible will be able to enjoy our product we will sell our product
-          both through our own website and through partner stores. Potential
-          partner stores would be AudioNova (https://www.audionova.se/) and
-          Audika (https://www.audika.se/), to name a few.
+          possible will be able to enjoy our product we sell our product both
+          through our own website and through partner stores. There are a few
+          retail stores that sell products specifically for people with hearing
+          loss. Those are the stores that also sell our product. This is also a
+          great way for us to find new customers since the people visiting these
+          kinds of stores (either physically or digitally) are our key customer
+          base.
         </Text>
+
         <Subtitle>Customer Segments</Subtitle>
         <Text>
-          We are targeting two customer segments: seniors who have developed
-          severe hearing disabilities with old age as well as the deaf
-          community. As both of these segments are relatively small we are
-          targeting niche markets.
+          We are targeting two customer segments: people who have developed
+          hearing loss later in life and as well as people who were born with
+          profound hearing loss or no hearing at all (i.e who are deaf)or that
+          developed this hearing loss during their childhood. What
+          differentiates these two segments are mainly two things: age
+          distribution and relationship to the deaf community. People who have
+          developed their hearing loss later in life usually do not know sign
+          language and do not have a significant connection to the deaf
+          community. The majority of this segment is over 65 years old. People
+          who developed profound hearing loss or deafness at the early stages of
+          their life, however, commonly do have strong ties to the deaf
+          community and often use sign language as their main way of
+          communication. The age within this segment is also evenly distributed.
+          As both of these segments are relatively small we are targeting niche
+          markets.
         </Text>
+
         <Subtitle>Cost Structure</Subtitle>
         <Text>
-          Our main costs will be hardware and production. We will also have
-          other costs such as marketing costs, costs of R&D of improvements and
-          costs tied to selling our product.
+          Our main costs are production and marketing. Of course, we also have
+          other costs such as costs of Research and Developments of
+          improvements, cost tied to community management, and costs tied to
+          selling our product.
         </Text>
+
         <Subtitle>Revenue Streams</Subtitle>
         <Text>
-          The revenue streams we are counting on at the moment is revenue from
-          asset sale, from selling the wearable. However, we believe that there
-          is great potential for adding a subscription service to complement the
-          wearable. The subscription service could potentially include offering
-          further customization of the wearable, but as for now, the main
-          revenue streams would be asset sales. Adding a subscription service
-          could be included in a potential expansion or evolvement of the
-          business later on.
+          Our revenue streams are revenue from assets sale, from selling the
+          device itself. However, we believe that there is great potential for
+          adding a subscription service to complement the wearable. The
+          subscription service could potentially include offering further
+          customization of the wearable, but as for now, the main revenue
+          streams would be asset sales. Adding a subscription service could be
+          included in a potential expansion or evolvement of the business later
+          on.
         </Text>
       </Container>
       <Footer />

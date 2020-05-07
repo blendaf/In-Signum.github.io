@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Title } from '../components/Fragments'
 import { BatteryCharging } from '@styled-icons/boxicons-solid/BatteryCharging'
-import { DoubleQuoteSerifRight } from 'styled-icons/open-iconic'
 import { FormatQuote } from '@styled-icons/material-sharp/FormatQuote'
 
 const Header = styled.div`
@@ -16,13 +16,6 @@ const Main = styled.div`
 
 const Section = styled.div`
   width: 100%;
-`
-
-const Title = styled.div`
-  font-size: 40px;
-  text-align: center;
-  padding-top: ${(props) => (props.bottom ? '80px' : '40px')};
-  padding-bottom: ${(props) => (props.bottom ? '40px' : '0px')};
 `
 
 const Container = styled.div`
@@ -105,8 +98,7 @@ const StyledBattery = styled(BatteryCharging)`
   width: 50px;
   color: rgb(39, 49, 56);
 `
-
-export default function Index() {
+export default () => {
   return (
     <>
       <Header>

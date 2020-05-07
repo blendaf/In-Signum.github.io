@@ -1,46 +1,40 @@
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Title, Subtitle } from '../components/Fragments'
+import Link from 'next/link'
 
 const Container = styled.div`
   width: 60%;
   margin: 0 auto;
 `
-
-const Title = styled.h1`
-  font-size: 40px;
-  text-align: center;
-  font-weight: 500;
-  padding-top: ${(props) => (props.product ? '40px' : '80px')};
-  padding-bottom: ${(props) => (props.product ? '0px' : '40px')};
-`
-const Subtitle = styled.h2`
-  font-size: 30px;
-  font-weight: 500;
-`
-
 const Text = styled.p`
   margin: 2em 0;
   line-height: 1.2;
 `
 
-const DiagramsWrapper = styled.div`
+const FigureWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 `
-const Diagrams = styled.img`
+const Diagram = styled.img`
   padding: 20px 0;
   width: 100%;
 `
 
-export default function Index() {
+const Table = styled.img`
+  padding: 20px 0;
+  width: 100%;
+  padding-bottom: 60px;
+`
+export default () => {
   return (
     <>
-      <Navbar dist={'320px'} />
+      <Navbar dist={'480px'} />
       <Container>
-        <Title>User Research Strategy</Title>
+        <Title>User Research Process</Title>
         <Title>User Data</Title>
         <Subtitle>Summary of User Research Interviews</Subtitle>
         <Text>
@@ -108,12 +102,36 @@ export default function Index() {
           endure daily use and that it was important that the product had a wide
           range of use cases.
         </Text>
-        <DiagramsWrapper>
-          <Diagrams src="/feedback.svg" />
-          <Diagrams src="/placement.svg" />
-          <Diagrams src="/characteristics.svg" />
-          <Diagrams src="/design.svg" />
-        </DiagramsWrapper>
+        <FigureWrapper>
+          <Diagram src="/feedback.svg" />
+          <Diagram src="/placement.svg" />
+          <Diagram src="/characteristics.svg" />
+          <Diagram src="/design.svg" />
+        </FigureWrapper>
+
+        <Subtitle>From User Data to Product</Subtitle>
+        <Text>
+          From these interviews and questionnaires, we have been able to create
+          a prioritized table with “I want…” statements. These statements are
+          supposed to identify what functions and characteristics our potential
+          users want in our product. The statements were also prioritized
+          depending on how many of our interview/questionnaire subjects
+          expressed the same sentiment as well as if they put extra weight
+          behind any statement such as “the most important function would be…’
+          etc. We could then use the table to create a more detailed product
+          specification. Since we did not receive any responses to our follow up
+          questions, we had to make assumptions about what was most important:
+          knowing the direction of a sound or having the device placed on the
+          wrist when creating our product specification. For more information
+          see our page about our{' '}
+          <Link href="/the-product">
+            <a>product</a>
+          </Link>
+          .
+        </Text>
+        <FigureWrapper>
+          <Table src="/Iwant.png" />
+        </FigureWrapper>
       </Container>
       <Footer />
     </>

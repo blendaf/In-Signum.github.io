@@ -1,30 +1,14 @@
 import styled from 'styled-components'
-import { createGlobalStyle } from 'styled-components'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Title } from '../components/Fragments'
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    box-sizing: border-box;
-    margin: 0;
-    font-family: 'Clarkson',Helvetica,sans-serif;
-    color: rgb(39,49,56);
-  }
-`
 const Container = styled.div`
   width: 80%;
   margin: 0 auto;
   padding: 20px 0;
 `
 
-const Title = styled.h1`
-  font-size: 40px;
-  text-align: center;
-  font-weight: 500;
-  padding-top: 20px;
-  margin: 0;
-  padding-bottom: ${(props) => (props.product ? '0px' : '40px')};
-`
 const ProfileBoxWrapper = styled.div`
   display: flex;
   flex-direction: row;
@@ -57,11 +41,10 @@ const Picture = styled.img`
   border-radius: 250px;
 `
 
-export default function Index() {
+export default () => {
   return (
     <>
-      <GlobalStyle />
-      <Navbar dist={'160px'} />
+      <Navbar dist={'320px'} />
       <Container>
         <Title>The Team</Title>
         <ProfileBoxWrapper>
@@ -94,7 +77,7 @@ export default function Index() {
           </ProfileBox>
           <ProfileBox>
             <ProfilePicture>
-              <Picture src="/blenda.jpg" />
+              <Picture src="/shujian.png" />
             </ProfilePicture>
             <ProfileName>Shujian Guan</ProfileName>
             <ProfileText>China, Shanghai</ProfileText>
@@ -123,7 +106,7 @@ export default function Index() {
           </ProfileBox>
           <ProfileBox>
             <ProfilePicture>
-              <Picture src="/blenda.jpg" />
+              <Picture src="/haichuan.jpg" />
             </ProfilePicture>
             <ProfileName>Haichuan Wang</ProfileName>
             <ProfileText>Shenzhen, China</ProfileText>
@@ -136,7 +119,7 @@ export default function Index() {
           </ProfileBox>
           <ProfileBox>
             <ProfilePicture>
-              <Picture src="/placeholder.jpg" />
+              <Picture src="/adrian.jpg" />
             </ProfilePicture>
             <ProfileName>Adrian Neila Serrano</ProfileName>
             <ProfileText>Sweden, Stockholm</ProfileText>

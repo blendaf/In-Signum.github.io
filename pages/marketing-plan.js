@@ -1,23 +1,11 @@
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import { Title, Subtitle } from '../components/Fragments'
 
 const Container = styled.div`
   width: 60%;
   margin: 0 auto;
-`
-
-const Title = styled.h1`
-  font-size: 40px;
-  text-align: center;
-  font-weight: 500;
-  margin: 0;
-  padding-top: 20px;
-  padding-bottom: ${(props) => (props.product ? '0px' : '40px')};
-`
-const Subtitle = styled.h2`
-  font-size: 30px;
-  font-weight: 500;
 `
 
 const SubSubtitle = styled.h4`
@@ -45,11 +33,10 @@ const FigureText = styled.h3`
   font-style: italic;
   margin: 0;
 `
-
-export default function Index() {
+export default () => {
   return (
     <>
-      <Navbar dist={'480px'} />
+      <Navbar dist={'640px'} />
       <Container>
         <Title>Marketing Plan</Title>
         <Subtitle>How Many Potential Users Are There</Subtitle>

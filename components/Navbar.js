@@ -27,6 +27,10 @@ const Navbar = styled.div`
   .four:hover ~ hr {
     margin-left: 480px;
   }
+
+  .five:hover ~ hr {
+    margin-left: 640px;
+  }
 `
 
 const NavItemWrapper = styled.ul`
@@ -107,11 +111,16 @@ export default ({ dist }) => {
             </Link>
           </NavItem>
           <NavItem className="two">
+            <Link href="/the-product">
+              <NavLink>The Product</NavLink>
+            </Link>
+          </NavItem>
+          <NavItem className="three">
             <Link href="/about">
               <NavLink>About Us</NavLink>
             </Link>
           </NavItem>
-          <DropDown className="three">
+          <DropDown className="four">
             <NavLink href="#">The Market</NavLink>
             <DropDownContent>
               <Link href="/competitors">
@@ -126,7 +135,7 @@ export default ({ dist }) => {
               </Link>
             </DropDownContent>
           </DropDown>
-          <DropDown className="four">
+          <DropDown className="five">
             <NavLink href="#">Our Business</NavLink>
             <DropDownContent>
               <Link href="/canvas">
