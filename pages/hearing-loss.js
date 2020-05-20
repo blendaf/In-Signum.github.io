@@ -18,39 +18,38 @@ export default () => {
     <>
       <Navbar dist={'480px'} />
       <Container>
-        <Title>The Different Levels of Hearing Loss</Title>
+        <Title>Different Levels of Hearing Loss</Title>
         <Text>
-          On this website, we use a variety of words to describe different
-          levels of hearing disability. Since there may exist different
-          definitions of these words the definitions we adhere to are stated
-          below.
+          On this website, we use a variety of terms to describe different
+          levels of hearing disability since there may exist different
+          definitions of these terms we have defined them based on how we use
+          them below.
         </Text>
-        <Subtitle>Disabling hearing loss</Subtitle>
+
         <Text>
-          Disabling hearing loss refers to hearing loss greater than 40 decibels
-          (dB) in the better hearing ear in adults and a hearing loss greater
-          than 30 dB in the better hearing ear in children. This means that
+          <b>Disabling hearing loss</b> refers to hearing loss greater than 40
+          decibels (dB) in the better hearing ear in adults and a hearing loss
+          greater than 30 dB in the better hearing ear in children. Meaning that
           adults with disabling hearing loss can not hear sounds below 40dB
           (about the sound of a bird’s call [2])[1].
         </Text>
-        <Subtitle>Severe/grave hearing loss </Subtitle>
+
         <Text>
-          Severe or grave hearing loss is defined as not being able to hear
-          sounds quieter than 50 to 64 decibels (about the sound of office noise
-          [2]) in one’s better ear. People who suffer from a severe hearing loss
-          are very hard of hearing and will normally have to use powerful
+          <b>Severe or grave hearing loss</b> is defined as not being able to
+          hear sounds quieter than 50 to 64 decibels (about the sound of office
+          noise [2]) in one’s better ear. People who suffer from severe hearing
+          loss are very hard of hearing and will generally have to use powerful
           hearing aids. Often they also rely on lip-reading even when they are
           using hearing aids [1].
         </Text>
-        <Subtitle>Profound hearing loss/deafness</Subtitle>
+
         <Text>
-          Deafness is often defined as having profound hearing loss to
-          absolutely no hearing. Having profound hearing loss means that the
-          quietest sounds heard, in the better ear, are at the lowest 80dB
-          (about the sound of a garbage disposal [2]). People who suffer from
-          profound hearing loss have a very weak sense of hearing and need very
-          strong hearing aids or implants, many also rely on lip-reading and/or
-          sign language [1].
+          <b>Deafness/profound hearing loss</b> implies a total lack of hearing.
+          Having profound hearing loss means that the quietest sounds heard, in
+          the better ear, are at the lowest 80dB (about the sound of a garbage
+          disposal [2]). People who suffer from profound hearing loss have a
+          very weak sense of hearing and need powerful hearing aids or implants;
+          many also rely on lip-reading and/or sign language [1].
         </Text>
         <Subtitle>References</Subtitle>
         <Text>

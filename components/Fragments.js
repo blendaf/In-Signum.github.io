@@ -5,7 +5,7 @@ export const Title = styled.h1`
   text-align: center;
   font-weight: 500;
   padding-top: ${(props) => (props.product ? '40px' : '20px')};
-  padding-bottom: ${(props) => (props.product ? '0px' : '40px')};
+  padding-bottom: ${(props) => (props.thin ? '0px' : '40px')};
 `
 export const Subtitle = styled.h2`
   font-size: 30px;

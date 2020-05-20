@@ -6,6 +6,14 @@ const NavbarContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  box-shadow: 0px -5px 10px 0px rgb(39, 49, 56);
+  position: relative;
+`
+const Logo = styled.img`
+  width: 40px;
+  position: absolute;
+  left: 30px;
+  cursor: pointer;
 `
 
 const Navbar = styled.div`
@@ -103,6 +111,9 @@ const Ruler = styled.hr`
 export default ({ dist }) => {
   return (
     <NavbarContainer>
+      <Link href="/">
+        <Logo src="/logo.png" />
+      </Link>
       <Navbar>
         <NavItemWrapper>
           <NavItem className="one">

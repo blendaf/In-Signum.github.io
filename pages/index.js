@@ -7,8 +7,8 @@ import { FormatQuote } from '@styled-icons/material-sharp/FormatQuote'
 
 const Header = styled.div`
   width: 100%;
-  height: 80vh;
-  background-color: rgb(214, 220, 224);
+  background-color: white;
+  height: 100vh;
 `
 const Main = styled.div`
   width: 100%;
@@ -50,7 +50,7 @@ const InterviewText = styled.div`
 `
 
 const InterviewTextMain = styled.div`
-  font-size: 25px;
+  font-size: 20px;
   text-align: ${(props) => (props.left ? 'left' : 'right')};
   line-height: 1.5em;
 `
@@ -98,11 +98,50 @@ const StyledBattery = styled(BatteryCharging)`
   width: 50px;
   color: rgb(39, 49, 56);
 `
+
+const MainTitle = styled.h1`
+  font-size: 50px;
+  text-align: center;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+`
+const Tagline = styled.p`
+  padding-bottom: 40px;
+`
+
+const VideoWrapper = styled.div`
+  width: 700px;
+  height: 350px;
+  box-shadow: 0px 0px 20px -10px rgb(39, 49, 56);
+`
+
+const Video = styled.div`
+  height: 100%;
+`
+
 export default () => {
   return (
     <>
       <Header>
         <Navbar dist={'0px'} />
+        <Container>
+          <MainTitle>InSignum</MainTitle>
+          <Tagline>Some tagline</Tagline>
+          <VideoWrapper>
+            <Video>
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/ykNFnLnYPAY"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </Video>
+          </VideoWrapper>
+        </Container>
       </Header>
       <Main>
         <Product>
@@ -127,7 +166,7 @@ export default () => {
 
         <Section>
           <Container>
-            <Title bottom>Why our product exists</Title>
+            <Title>Why our product exists</Title>
             <InterviewBox>
               <StyledQuote />
 

@@ -18,10 +18,10 @@ const FigureWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-bottom: 40px;
 `
 const Figure = styled.img`
   width: 100%;
-  padding-bottom: 40px;
 `
 
 const FigureText = styled.h3`
@@ -35,9 +35,10 @@ export default () => {
     <>
       <Navbar dist={'640px'} />
       <Container>
-        <Title>Our Business Model Canvas</Title>
+        <Title thin>Our Business Model Canvas</Title>
         <FigureWrapper>
           <Figure src="/canvas.png" />
+          <FigureText>Our Business Model Canvas</FigureText>
         </FigureWrapper>
         <Subtitle>Key Partners </Subtitle>
         <Text>
@@ -46,23 +47,23 @@ export default () => {
           hearing. We believe that collaboration is the key to success and
           progress, therefore, we collaborate with some of the groups and
           associations that are leading change for people with hearing
-          disabilities. For example, we are collaborating with the Swedish
-          national deaf association to be able to continuously improve our
-          product by getting feedback from their members. To be able to build
-          our project we have established partnerships not only with other
-          associations and companies working with or for people that are hard of
-          hearing, but also a manufacturing partner that produces our product
-          and retail stores that resell our product.
+          disabilities. For example, we are working with the Swedish national
+          deaf association to be able to continuously improve our product by
+          getting feedback from their members. To be able to build our project
+          we have established partnerships not only with other associations and
+          companies working with or for people that are hard of hearing, but
+          also a manufacturing partner that produces our product and retail
+          stores that sell our product.
         </Text>
 
         <Subtitle>Key activities</Subtitle>
         <Text>
-          Our key activities are foremost the production of our product, the
-          continuous development of our product through R&D activities,
-          marketing, and community management. We have a close relationship with
-          our customers, this does not only help us to market our product, but
-          to get important feedback on our device and what they want us to
-          improve.
+          Our principal activities are foremost the production of our product,
+          the continuous development of our product through Reseach and
+          development activities, marketing, and community management. We have a
+          close relationship with our customers, this does not only help us to
+          market our product, but to get valuable feedback on our device and
+          what they want us to improve.
         </Text>
 
         <Subtitle>Key Resources</Subtitle>
@@ -70,8 +71,8 @@ export default () => {
           The key resources we have are close relationships with people within
           the deaf community meaning that we are able to get continuous feedback
           from our key users and customers. Furthermore, we also have mentors
-          and advisor that are knowledgable both within our technological area,
-          but also within the area of innovation and business development. We
+          and advisor that are knowledgeable both within our technological area,
+          but also within the field of innovation and business development. We
           also have a diverse group of people working at the business with
           backgrounds in interaction design, autonomous systems, and ICT
           innovation.
@@ -112,10 +113,10 @@ export default () => {
           possible will be able to enjoy our product we sell our product both
           through our own website and through partner stores. There are a few
           retail stores that sell products specifically for people with hearing
-          loss. Those are the stores that also sell our product. This is also a
-          great way for us to find new customers since the people visiting these
-          kinds of stores (either physically or digitally) are our key customer
-          base.
+          loss. Those are the stores that also sell our product. This is also an
+          excellent way for us to find new customers since the people visiting
+          these kinds of stores (either physically or digitally) are our key
+          customer base.
         </Text>
 
         <Subtitle>Customer Segments</Subtitle>
@@ -131,7 +132,7 @@ export default () => {
           community. The majority of this segment is over 65 years old. People
           who developed profound hearing loss or deafness at the early stages of
           their life, however, commonly do have strong ties to the deaf
-          community and often use sign language as their main way of
+          community and often use sign language as their primary way of
           communication. The age within this segment is also evenly distributed.
           As both of these segments are relatively small we are targeting niche
           markets.
@@ -140,9 +141,9 @@ export default () => {
         <Subtitle>Cost Structure</Subtitle>
         <Text>
           Our main costs are production and marketing. Of course, we also have
-          other costs such as costs of Research and Developments of
-          improvements, cost tied to community management, and costs tied to
-          selling our product.
+          other costs such as costs of research and development of improvements,
+          cost tied to community management, and costs linked to selling our
+          product.
         </Text>
 
         <Subtitle>Revenue Streams</Subtitle>
