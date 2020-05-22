@@ -18,9 +18,9 @@ node -v
 npm -v
 ```
 
-If you don't have node installed visit [https://nodejs.org/en/](Node.js). When you download Node.js, npm will be installed automagically
+If you don't have node installed visit [Node.js](https://nodejs.org/en/). When you download Node.js, npm will be installed automagically
 
-If you have node but don't have npm installed visit [https://www.npmjs.com/get-npm](npmjs) or run: 
+If you have node but don't have npm installed visit [npmjs](https://www.npmjs.com/get-npm) or run: 
 
 ```
 npm install npm -g
