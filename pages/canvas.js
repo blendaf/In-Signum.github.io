@@ -35,7 +35,9 @@ export default () => {
     <>
       <Navbar dist={'640px'} />
       <Container>
-        <Title thin>Our Business Model Canvas</Title>
+        <Title main thin>
+          Our Business Model Canvas
+        </Title>
         <FigureWrapper>
           <Figure src="/canvas.png" />
           <FigureText>Our Business Model Canvas</FigureText>
