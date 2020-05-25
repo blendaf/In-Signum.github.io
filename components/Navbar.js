@@ -121,11 +121,17 @@ export default ({ dist }) => {
               <NavLink>Home</NavLink>
             </Link>
           </NavItem>
-          <NavItem className="two">
-            <Link href="/the-product">
-              <NavLink>The Product</NavLink>
-            </Link>
-          </NavItem>
+          <DropDown className="two">
+            <NavLink href="#">The Product</NavLink>
+            <DropDownContent>
+              <Link href="/the-product">
+                <a href="#">The Product</a>
+              </Link>
+              <Link href="/prototype">
+                <a href="#">Proof Of Concept</a>
+              </Link>
+            </DropDownContent>
+          </DropDown>
           <NavItem className="three">
             <Link href="/about">
               <NavLink>About Us</NavLink>
@@ -155,10 +161,10 @@ export default ({ dist }) => {
               <Link href="/marketing-plan">
                 <a href="#">Marketing Plan</a>
               </Link>
-              <Link href="/our-business">
+              <Link href="/cost-structure">
                 <a href="#">Business Cost Structure</a>
               </Link>
-              <Link href="/our-business">
+              <Link href="/venture">
                 <a href="#">How We Will Run The Venture</a>
               </Link>
             </DropDownContent>

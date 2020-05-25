@@ -46,7 +46,7 @@ export default () => {
           loss, making up 18.5% of the population (SCB). In this case, a person
           with a hearing loss is defined as a person that has answered no to the
           question “Can you easily hear what is said in conversation between
-          several people, with or without a hearing aid? " [1]. Our target users
+          several people, with or without a hearing aid?" [1]. Our target users
           are first and foremost people with no hearing or grave hearing loss
           since our product will help to notify users of loud sounds as well.
           Our product is therefore developed for people who suffer from severe
@@ -58,7 +58,7 @@ export default () => {
           people are deaf (i.e., people with no hearing at all or who have
           profound hearing loss) in Sweden, but according to Döva.se there are
           around 8000-10000 people in Sweden who were born deaf or became deaf
-          during their childhood years [2]. Of course, this does not include the
+          during their childhood [2]. Of course, this does not include the
           people who have become deaf later in life (this is, however, a
           relatively small number). It is also not clear how many people have
           severe hearing loss. Although it is estimated that, in the United
@@ -90,40 +90,40 @@ export default () => {
         <Text>
           According to WHO, about 466 million people worldwide have disabling
           hearing loss (5% of the population), and this number is expected to
-          increase to over 900 million by 2050 [7]. Disabling hearing loss means
-          not hearing sounds below 30-40 dB. It is not clear how many people
-          have profound hearing loss or severe hearing loss in the world, but,
-          as stated above, according to Blanchfield et al. the number of people
-          with severe and profound hearing loss was approximately 3.4 percent of
-          the total hearing-impaired population in the United States [3]. This
-          means that about 16 million people in the world suffer from severe or
-          profound hearing loss, assuming that the percentage of people with
-          profound and severe hearing loss is the same across the globe.
-          However, as hearing loss is more prevalent in low- and middle-income
-          countries, this is just a crude approximation [7].
+          increase to over 900 million by 2050 [7]. It is not clear how many
+          people have profound hearing loss or severe hearing loss in the world,
+          but, as stated above, according to Blanchfield et al. the number of
+          people with severe and profound hearing loss was approximately 3.4
+          percent of the total hearing-impaired population in the United States
+          [3]. This means that about 16 million people in the world suffer from
+          severe or profound hearing loss, assuming that the percentage of
+          people with profound and severe hearing loss is the same across the
+          globe. However, as hearing loss is more prevalent in low- and
+          middle-income countries, this is just a crude approximation [7].
         </Text>
         <Subtitle>User segments</Subtitle>
         <Text>
           The number of deaf people in Sweden is quite evenly distributed
           between different age segmentations; this is explained by the fact
           that the majority of deaf people are born deaf or become deaf during
-          their childhood year. Only a minimal number become deaf later in life.
+          their childhood. Only a minimal number become deaf later in life.
           However, when looking at people with hearing loss, in general, a clear
           majority is older. In fact, in Sweden, a majority (52% about 775 000
           people) of people with hearing loss are above the age of 65;
           therefore, the majority of our potential users are older. As mentioned
-          previously, not all of the 52 % are the target users for our product,
+          previously, not all of the 52% are the target users for our product,
           although we can expect to find a substantial amount of our users
           within the 52 %. Even though a majority of people with hearing loss
           are above the age of 65, there is still a significant number of people
           with hearing loss that are under the age of 65. In fact, already at
           the age of 45-64 one in five experience trouble with their hearing
           [1]. We assume that the distribution is similar internationally since
-          there is little data on the age distribution globally. There is also a
-          slight difference between men and women, men making up 56% of people
-          with hearing loss. However, we see no reason to segment our users
-          based on gender as the needs of users of different genders, with
-          regards to our product, do not differ [1].
+          there is little data on the age distribution globally. Below is the
+          age distribution of people over 16, with hearing loss in Sweden, 2017
+          [1]. There is also a slight difference between men and women, men
+          making up 56% of people with hearing loss. However, we see no reason
+          to segment our users based on gender as the needs of users of
+          different genders, with regards to our product, do not differ [1].
         </Text>
         <FigureWrapper>
           <Figure src="/ageDistr.png" />
@@ -202,16 +202,23 @@ export default () => {
           which is about 100 euros [10]. Of course, this is not the total cost
           for the hearing aids, only what the individual would pay. In the US,
           hearing aids can cost somewhere between 500 euros and 6000 euros [11].
-          In the US, 3.65 million hearing aids were dispensed in 2016 alone.
-          Looking at other similar products, for example, the products by
-          Bellman and Symfon cost around 100 euros [12]. Lastly, looking at the
-          user input we have got so far, we know that a majority of people that
-          have responded to our survey currently use some of the products above.
-          From this, we can conclude that there definitely is a willingness to
-          pay for hearing assistive products, despite the high costs tied to
-          them, and we believe there is a willingness to pay for our product,
-          assuming that we can keep the retail price to a similar level or lower
-          than that of related products.
+          In the US, 3.65 million hearing aids were dispensed in 2016 alone. In
+          Spain the average cost for hearing aids range between 1000 and 3000
+          euros per ear. Depending on the autonomous community, families with
+          less than 17000 euros yearly income could deduct part or the full cost
+          of the price [14]. This subsidy could make a difference in our
+          customers willingness to pay. In one interview, the participant
+          admitted to being willing to pay up to 1000 euros for a device that
+          provides him with sound location awareness. Looking at other similar
+          products, for example, the products by Bellman and Symfon cost around
+          100 euros [12]. Lastly, looking at the user input we have got so far,
+          we know that a majority of people that have responded to our survey
+          currently use some of the products above. From this, we can conclude
+          that there definitely is a willingness to pay for hearing assistive
+          products, despite the high costs tied to them, and we believe there is
+          a willingness to pay for our product, assuming that we can keep the
+          retail price to a similar level or lower than that of related
+          products.
         </Text>
         <Subtitle>How will we communicate with our users/buyers?</Subtitle>
         <Text>
@@ -294,7 +301,13 @@ export default () => {
           <br /> [13] S. Dhillon, "InstaGrandmas: Is Selling To Seniors On
           Social Media Worth Your Brand Dollars?," 25 January 2019. [Online].
           Available:
-          https://www.forbes.com/sites/valleyvoices/2019/01/25/is-selling-to-seniors-on-social-media-worth-your-brand-dollars/#7ff479eb2159.
+          https://www.forbes.com/sites/valleyvoices/2019/01/25/is-selling-to-seniors-on-social-media-worth-your-brand-dollars/#7ff479eb2159.{' '}
+          <br />
+          [14] Order 1049/2017, of June 15, of the Ministry of Social and Family
+          Policies, which approves the regulatory bases for the granting of aid
+          to promote personal autonomy and promote accessibility to people with
+          disabilities in situation of difficulty or social vulnerability
+          http://www.madrid.org/wleg_pub/secure/normativas/contenidoNormativa.jsf?opcion=VerHtml&nmnorma=9831#no-back-button
         </Text>
       </Container>
       <Footer />
