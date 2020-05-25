@@ -73,8 +73,8 @@ const ProductPicture = styled.div`
 `
 
 const ProductImage = styled.div`
-  width: 400px;
-  height: 400px;
+  width: 480px;
+  height: 270px;
   margin: 0 auto;
   background-color: rgb(39, 49, 56);
 `
@@ -88,7 +88,7 @@ const ProductDescription = styled.div`
 const Description = styled.div`
   padding: 20px;
   text-align: center;
-  width: 120px;
+  width: 300px;
   font-size: 20px;
 `
 
@@ -145,21 +145,29 @@ export default () => {
       </Header>
       <Main>
         <Product>
-          <Title>Our Product</Title>
+          <Title>Introducing The InSignum One</Title>
           <ProductPicture>
-            <ProductImage></ProductImage>
+            <ProductImage>
+              <iframe
+                src="https://giphy.com/gifs/lPLKo7Kiw9bDlyWeRC/html5"
+                width="640"
+                height="360"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </ProductImage>
           </ProductPicture>
           <ProductDescription>
-            <Description>Detect sounds as low as 40dB</Description>
-            <Description>20 different vibration patterns</Description>
+            <Description>Detects and recognizes important sounds around you</Description>
+            <Description>Conveys the source of the sounds through vibration</Description>
             <Description>
               <DescriptionIcon>
                 <StyledBattery />
               </DescriptionIcon>
-              6 day battery life
+              Lasts for months on a single charge
             </Description>
             <Description>
-              Extra strong vibrations to never miss a sound
+              Fully customizable behaviour with any smart device
             </Description>
           </ProductDescription>
         </Product>
