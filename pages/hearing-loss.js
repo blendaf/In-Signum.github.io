@@ -1,12 +1,7 @@
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Title, Subtitle } from '../components/Fragments'
-
-const Container = styled.div`
-  width: 60%;
-  margin: 0 auto;
-`
+import { Title, Subtitle, Container } from '../components/Fragments'
 
 const Text = styled.p`
   margin: 2em 0;

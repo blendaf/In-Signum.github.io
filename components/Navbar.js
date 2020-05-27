@@ -18,7 +18,7 @@ const Logo = styled.img`
 
 const Navbar = styled.div`
   margin: 0;
-  padding-top: 20px;
+  padding-top: 10px;
 
   .one:hover ~ hr {
     margin-left: 0px;
@@ -122,7 +122,7 @@ export default ({ dist }) => {
             </Link>
           </NavItem>
           <DropDown className="two">
-            <NavLink href="#">The Product</NavLink>
+            <NavLink href="#">Product</NavLink>
             <DropDownContent>
               <Link href="/the-product">
                 <a href="#">The Product</a>
@@ -138,7 +138,7 @@ export default ({ dist }) => {
             </Link>
           </NavItem>
           <DropDown className="four">
-            <NavLink href="#">The Market</NavLink>
+            <NavLink href="#">Market</NavLink>
             <DropDownContent>
               <Link href="/competitors">
                 <a href="#">Competitors</a>

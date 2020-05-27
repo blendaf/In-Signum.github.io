@@ -11,3 +11,9 @@ export const Subtitle = styled.h2`
   font-size: 30px;
   font-weight: 500;
 `
+
+export const Container = styled.div`
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 100px;
+`

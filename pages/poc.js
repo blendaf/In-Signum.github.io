@@ -1,29 +1,21 @@
 import styled from 'styled-components'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { Title, Subtitle } from '../components/Fragments'
+import { Title, Subtitle, Container } from '../components/Fragments'
 
-const Container = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-`
 const Heading4 = styled.h4`
   font-size: 25px;
   font-weight: 500;
 `
-
 const Image = styled.figure`
   text-align: center;
 `
-
 const Source = styled.img`
   width: 100%;
   border-radius: 1%;
   margin: 0 auto;
   display: block;
 `
-
 const Text = styled.p``
 
 const Bullet = styled.ul``
