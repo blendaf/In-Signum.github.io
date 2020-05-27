@@ -158,12 +158,16 @@ export default () => {
             </ProductImage>
           </ProductPicture>
           <ProductDescription>
-            <Description>Detects and recognizes important sounds around you</Description>
-            <Description>Conveys the source of the sounds through vibration</Description>
             <Description>
-              <DescriptionIcon>
+              Detects and recognizes important sounds around you
+            </Description>
+            <Description>
+              Conveys the source of the sounds through vibration
+            </Description>
+            <Description>
+              {/* <DescriptionIcon>
                 <StyledBattery />
-              </DescriptionIcon>
+              </DescriptionIcon> */}
               Lasts for months on a single charge
             </Description>
             <Description>

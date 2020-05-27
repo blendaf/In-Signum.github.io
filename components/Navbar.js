@@ -127,7 +127,7 @@ export default ({ dist }) => {
               <Link href="/the-product">
                 <a href="#">The Product</a>
               </Link>
-              <Link href="/prototype">
+              <Link href="/poc">
                 <a href="#">Proof Of Concept</a>
               </Link>
             </DropDownContent>
