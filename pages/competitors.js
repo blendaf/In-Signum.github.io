@@ -36,15 +36,16 @@ export default () => {
       <Container>
         <Title>Competitors</Title>
 
-        <FigureWrapper>
-          <Figure />
-          <FigureText>Placeholder for Table of Competitors</FigureText>
-        </FigureWrapper>
         <Text>
           In the current market, there are 7 major products in 3 areas in
           assisting people’s hearing impairments.
         </Text>
         <Subtitle>Wearable devices</Subtitle>
+
+        <FigureWrapper>
+          <Figure src="/competitors1.png" />
+          <FigureText>Placeholder for Table of Competitors</FigureText>
+        </FigureWrapper>
         <Text>
           Ontenna is a new interface device that is worn atop the user’s hair.
           It conveys the characteristics of sounds using vibration and light
@@ -66,6 +67,10 @@ export default () => {
           all will not benefit from this product.
         </Text>
         <Subtitle>Home systems</Subtitle>
+        <FigureWrapper>
+          <Figure src="/competitors2.png" />
+          <FigureText>Placeholder for Table of Competitors</FigureText>
+        </FigureWrapper>
         <Text>
           Wiim is a smartwatch linked to sensors that you have installed in your
           home. You can know if the doorbell is ringing or your child is crying.
