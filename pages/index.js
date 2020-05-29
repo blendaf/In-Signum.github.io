@@ -119,7 +119,7 @@ export default () => {
         <Navbar dist={'0px'} />
         <Container>
           <MainTitle>InSignum One</MainTitle>
-          <Tagline>Some tagline</Tagline>
+          {/* <Tagline>Some tagline</Tagline> */}
           <Product>
             <ProductPicture>
               <ProductImage>
